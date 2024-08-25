@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  font-weight: normal;
+  src: url("./fonts/Pretendard-Regular.ttf") format("truetype");
+}
+
+body,
+html {
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 1.1em;
+}
+
+.app-primary-color {
+  color: #9bde7e;
+}
+
+nav,
+.app-primary-bg-color {
+  background-color: #9bde7e;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.border-bottom-1 {
+  border-bottom: 1px solid lightgray;
+}
+
+.card-subtitle {
+  margin-top: 1rem;
+}
+
+.navbar-nav .nav-link,
+.navbar-toggler {
+  color: white;
+  border-color: white;
+}
