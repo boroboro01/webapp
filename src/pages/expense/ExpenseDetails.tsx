@@ -6,8 +6,6 @@ import ConfirmDialog from "../../components/ConfirmDialog";
 import { useState } from "react";
 import { deleteExpenseByExpenseId } from "../../services/expense-service";
 
-deleteExpenseByExpenseId;
-
 const ExpenseDetails = () => {
   const { expenseId } = useParams<{ expenseId: string }>();
   const [showDialog, setShowDialog] = useState<boolean>(false);
@@ -52,7 +50,12 @@ const ExpenseDetails = () => {
         >
           Delete
         </button>
-        <button className="btn btn-sm btn-warning mx-2">Edit</button>
+        <button
+          className="btn btn-sm btn-warning mx-2"
+          onClick={() => navigate(`/edit/${expenseId}`)}
+        >
+          Edit
+        </button>
         <Link className="btn btn-sm btn-secondary" to={"/"}>
           Back
         </Link>

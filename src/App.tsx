@@ -21,6 +21,10 @@ const App = () => {
           element={<ExpenseDetails></ExpenseDetails>}
         ></Route>
         <Route
+          path="/edit/:expenseId"
+          element={<NewExpense></NewExpense>}
+        ></Route>
+        <Route
           path="/reports"
           element={<ExpenseReports></ExpenseReports>}
         ></Route>

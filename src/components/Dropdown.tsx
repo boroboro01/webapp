@@ -32,8 +32,9 @@ const Dropdown = ({
         className="from-control"
         onChange={onChange}
         onBlur={onBlur}
+        value={value}
       >
-        <option value={value} label={label}></option>
+        <option value="" label={label}></option>
         {options.map((option) => (
           <option key={option} value={option} label={option} />
         ))}
