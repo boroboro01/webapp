@@ -16,7 +16,7 @@ html {
 
 nav,
 .app-primary-bg-color {
-  background-color: #9bde7e;
+  background-color: #9bde7e !important;
 }
 
 .card-body {

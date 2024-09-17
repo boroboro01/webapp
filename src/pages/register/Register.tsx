@@ -104,8 +104,17 @@ const Register = () => {
               </div>
             ) : null}
           </div>
+          {isLoading && (
+            <button
+              className="btn btn-sm app-primary-bg-color btn-outline-light"
+              type="submit"
+              disabled
+            >
+              Loading...
+            </button>
+          )}
           <button
-            className="btn btn-sm btn-primary btn-outline-light"
+            className="btn btn-sm app-primary-bg-color btn-outline-light"
             type="submit"
           >
             Register
